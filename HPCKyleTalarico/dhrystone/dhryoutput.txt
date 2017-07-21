@@ -1,0 +1,40 @@
+Dhrystone time for 100000000 passes = 7
+This machine benchmarks at 14285714 dhrystones/second
+Dhrystone time for 100000000 passes = 9
+This machine benchmarks at 11111111 dhrystones/second
+Dhrystone time for 100000000 passes = 9
+This machine benchmarks at 11111111 dhrystones/second
+Dhrystone time for 100000000 passes = 9
+This machine benchmarks at 11111111 dhrystones/second
+Dhrystone time for 100000000 passes = 9
+This machine benchmarks at 11111111 dhrystones/second
+Dhrystone time for 100000000 passes = 9
+This machine benchmarks at 11111111 dhrystones/second
+Dhrystone time for 100000000 passes = 9
+This machine benchmarks at 11111111 dhrystones/second
+Dhrystone time for 100000000 passes = 9
+This machine benchmarks at 11111111 dhrystones/second
+Dhrystone time for 100000000 passes = 3
+This machine benchmarks at 33333333 dhrystones/second
+Dhrystone time for 100000000 passes = 3
+This machine benchmarks at 33333333 dhrystones/second
+Dhrystone time for 100000000 passes = 3
+This machine benchmarks at 33333333 dhrystones/second
+Dhrystone time for 100000000 passes = 2
+This machine benchmarks at 50000000 dhrystones/second
+Dhrystone time for 100000000 passes = 2
+This machine benchmarks at 50000000 dhrystones/second
+Dhrystone time for 100000000 passes = 2
+This machine benchmarks at 50000000 dhrystones/second
+Dhrystone time for 100000000 passes = 2
+This machine benchmarks at 50000000 dhrystones/second
+Dhrystone time for 100000000 passes = 2
+This machine benchmarks at 50000000 dhrystones/second
+Dhrystone time for 100000000 passes = 2
+This machine benchmarks at 50000000 dhrystones/second
+Dhrystone time for 100000000 passes = 2
+This machine benchmarks at 50000000 dhrystones/second
+Dhrystone time for 100000000 passes = 1
+This machine benchmarks at 100000000 dhrystones/second
+Dhrystone time for 100000000 passes = 2
+This machine benchmarks at 50000000 dhrystones/second

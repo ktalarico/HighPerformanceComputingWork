@@ -1,0 +1,35 @@
+
+n: 768
+m: 4194304
+k: 3
+Pixels/s:	1.511e+13
+Computaion Max:	5.66667e+11
+Memory Max:	2.5e+10
+
+n: 768
+m: 4194304
+k: 3
+Pixels/s:	1.85963e+13
+Computaion Max:	5.66667e+11
+Memory Max:	2.5e+10
+
+n: 768
+m: 4194304
+k: 3
+Pixels/s:	1.51615e+13
+Computaion Max:	5.66667e+11
+Memory Max:	2.5e+10
+
+n: 768
+m: 4194304
+k: 3
+Pixels/s:	1.64535e+13
+Computaion Max:	5.66667e+11
+Memory Max:	2.5e+10
+
+n: 768
+m: 4194304
+k: 3
+Pixels/s:	1.71063e+13
+Computaion Max:	5.66667e+11
+Memory Max:	2.5e+10

@@ -1,0 +1,5 @@
+CC=g++
+CFLAGS=-march=native -mtune=native -fopenmp -lm -std=c++11 -O3 -Wall -Wextra
+
+test: bilin.cpp makefile
+	$(CC) $(CFLAGS) -o test bilin.cpp

@@ -1,0 +1,16 @@
+#include<iostream>
+#include<math.h>
+#include<stdlib.h>
+int main(int argc, char* argv[]){
+  long long int x, y, z, n, stepsize;
+  x=atoi(argv[1]);
+  y=atoi(argv[2]);
+  z=3;
+  n=atoi(argv[3]);
+  x=ceil(sqrt(x*x + y*y));
+  y=x;
+  stepsize=1;
+  for(int i=0; i<n; i+=stepsize){
+    std::cout<<(x*y)<<"\t"<<(37*x*y*z*i)/(1.7*1000*1000*1000*1000)<<std::endl;
+  }
+}

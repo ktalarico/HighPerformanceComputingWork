@@ -1,0 +1,6 @@
+set term png
+set title "N Rotations on a 1024x1024 Image"
+set xlabel "Number of Rotations"
+set ylabel "Seconds"
+set output "rotModelGPU.png"
+plot "flopGpu.dat" with lines, "memGpu.dat" with lines, "gpurot.sh.e14099" with points

@@ -1,0 +1,10 @@
+#!/bin/sh
+#PBS -l nodes=1:ppn=16
+#PBS -q mamba
+
+./latency 32
+./latency 128
+./latency 1024
+./latency 4096
+./latency 32768
+./latency 1638400

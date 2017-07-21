@@ -1,0 +1,24 @@
+Sum of a: 1.6e+06
+16 threads
+Took 0.00402157
+25462.7 MB/s
+Sum of a: 6.4e+06
+16 threads
+Took 0.00166029
+246704 MB/s
+Sum of a: 5.12e+07
+16 threads
+Took 0.00695024
+471466 MB/s
+Sum of a: 1.024e+08
+16 threads
+Took 0.012845
+510208 MB/s
+Sum of a: 1.31072e+08
+16 threads
+Took 0.0162014
+517772 MB/s
+Sum of a: 1.34218e+08
+16 threads
+Took 3.05313
+103033 MB/s

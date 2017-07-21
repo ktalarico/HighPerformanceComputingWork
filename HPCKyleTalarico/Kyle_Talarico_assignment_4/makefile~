@@ -1,0 +1,8 @@
+CFLAGS=-O3 -march=native -mtune=native -lm -fopenmp -std=c++11 -g
+CC=g++
+
+convul: Convolution.cpp makefile
+	$(CC) $(CFLAGS) -o convul Convolution.cpp
+
+clean:
+	rm convul

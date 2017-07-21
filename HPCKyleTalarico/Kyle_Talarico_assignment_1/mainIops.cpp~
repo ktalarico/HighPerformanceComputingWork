@@ -1,0 +1,34 @@
+#include <iostream>
+#include <omp.h>
+#include <immintrin.h>
+#include <chrono>
+int main(){
+  int n = 1000*1000*1000;
+  __m256i *emem, *fmem, *gmem;
+  int *hmem;
+  std::chrono::time_point<std::chrono::system_clock> start, end;
+  start = std::chrono::system_clock::now();
+  #pragma omp parallel
+  {
+  __m256i a = _mm256_set_epi32 ( 1, 2, 3, 4, 4, 3, 2, 1);
+  __m256i b = _mm256_set_epi32 ( 1, 2, 3, 4, 4, 3, 2, 1);
+  __m256i c = _mm256_set_epi32 ( 1, 2, 3, 4, 4, 3, 2, 1);
+  __m256i d = _mm256_set_epi32 ( 1, 2, 3, 4, 4, 3, 2, 1);
+  __m256i e, f, g;
+  int h, j=1,k=1;
+  #pragma omp for
+  for(int i=0; i<n; i++){
+    e = _mm256_add_epi32(a, b);
+    f = _mm256_add_epi32(a, b);
+    g = _mm256_mul_epi32(a, b);
+    h = j+k;
+  }
+  _mm256_storeu_si256(emem, e);
+  _mm256_storeu_si256(fmem, f);
+  _mm256_storeu_si256(gmem, g);
+  hmem = &h;
+  }
+  end = std::chrono::system_clock::now();
+  std::chrono::duration<double> diff = end - start;
+  std::cout << diff << "\n";
+}

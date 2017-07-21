@@ -1,0 +1,4 @@
+CC=g++
+
+latency: latency.cpp
+	$(CC) -o latency latency.cpp

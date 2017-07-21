@@ -1,0 +1,14 @@
+set term png
+set output "CPUBounds.png"
+set title "Full HD with 100 Templates on CPU"
+set xlabel "Num Images"
+set ylabel "Pixels/s"
+plot "CPUPlot.dat" using 2 title 'Calculations', \
+     "CPUPlot.dat" using 3 title 'Memory'
+set output "GPUBounds.png"
+set title "Full HD with 100 Templates on GPU"
+set xlabel "Num Images"
+set ylabel "Pixels/s"
+plot "GPUPlot.dat" using 2 title "Calculation", \
+     "GPUPlot.dat" using 3 title "Memory", \
+     "GPUPlot.dat" using 4 title "PCIe"

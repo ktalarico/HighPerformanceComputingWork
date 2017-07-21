@@ -1,0 +1,6 @@
+set term png
+set output "kplot.png"
+set title "Maximum Speed of Flops and Memory Access"
+set logscale y
+plot "plot1.dat" using 2 title "Computation"  with lines, \
+     "plot1.dat" using 3 title "Memory Access" with lines

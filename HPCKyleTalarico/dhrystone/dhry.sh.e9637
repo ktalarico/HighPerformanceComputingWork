@@ -1,0 +1,50 @@
+drystone.c: In function 'Proc0':
+drystone.c:176:33: warning: incompatible implicit declaration of built-in function 'malloc' [enabled by default]
+        PtrGlbNext = (RecordPtr) malloc(sizeof(RecordType));
+                                 ^
+drystone.c:182:8: warning: incompatible implicit declaration of built-in function 'strcpy' [enabled by default]
+        strcpy(PtrGlb->StringComp, "DHRYSTONE PROGRAM, SOME STRING");
+        ^
+drystone.c:225:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+ printf("Dhrystone time for %ld passes = %ld\n", (long) LOOPS, benchtime);
+ ^
+drystone.c: In function 'Proc0':
+drystone.c:176:33: warning: incompatible implicit declaration of built-in function 'malloc' [enabled by default]
+        PtrGlbNext = (RecordPtr) malloc(sizeof(RecordType));
+                                 ^
+drystone.c:182:8: warning: incompatible implicit declaration of built-in function 'strcpy' [enabled by default]
+        strcpy(PtrGlb->StringComp, "DHRYSTONE PROGRAM, SOME STRING");
+        ^
+drystone.c:225:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+ printf("Dhrystone time for %ld passes = %ld\n", (long) LOOPS, benchtime);
+ ^
+drystone.c: In function 'Proc0':
+drystone.c:176:33: warning: incompatible implicit declaration of built-in function 'malloc' [enabled by default]
+        PtrGlbNext = (RecordPtr) malloc(sizeof(RecordType));
+                                 ^
+drystone.c:182:8: warning: incompatible implicit declaration of built-in function 'strcpy' [enabled by default]
+        strcpy(PtrGlb->StringComp, "DHRYSTONE PROGRAM, SOME STRING");
+        ^
+drystone.c:225:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+ printf("Dhrystone time for %ld passes = %ld\n", (long) LOOPS, benchtime);
+ ^
+drystone.c: In function 'Proc0':
+drystone.c:176:33: warning: incompatible implicit declaration of built-in function 'malloc' [enabled by default]
+        PtrGlbNext = (RecordPtr) malloc(sizeof(RecordType));
+                                 ^
+drystone.c:182:8: warning: incompatible implicit declaration of built-in function 'strcpy' [enabled by default]
+        strcpy(PtrGlb->StringComp, "DHRYSTONE PROGRAM, SOME STRING");
+        ^
+drystone.c:225:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+ printf("Dhrystone time for %ld passes = %ld\n", (long) LOOPS, benchtime);
+ ^
+drystone.c: In function 'Proc0':
+drystone.c:176:33: warning: incompatible implicit declaration of built-in function 'malloc' [enabled by default]
+        PtrGlbNext = (RecordPtr) malloc(sizeof(RecordType));
+                                 ^
+drystone.c:182:8: warning: incompatible implicit declaration of built-in function 'strcpy' [enabled by default]
+        strcpy(PtrGlb->StringComp, "DHRYSTONE PROGRAM, SOME STRING");
+        ^
+drystone.c:225:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+ printf("Dhrystone time for %ld passes = %ld\n", (long) LOOPS, benchtime);
+ ^

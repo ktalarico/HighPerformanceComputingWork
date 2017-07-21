@@ -1,0 +1,10 @@
+#include<iostream>
+#include<cstdlib>
+int main(int argc, char* argv[]){
+  float n = atof(argv[1]), m = atof(argv[2]);
+  float stepsize = 1;
+  float klim = 10000 + stepsize;
+  for(float i=0; i<klim;i+=stepsize){
+    std::cout<<i<<"\t"<<((i*i)*n*m)/(1.7*1000*1000*1000*1000)<<"\t"<<((i*i)*n*m + (n*m))/(100.0*1000*1000*1000)<<"\n";
+  }
+}

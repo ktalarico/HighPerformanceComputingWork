@@ -1,0 +1,5 @@
+65GB of DRAM
+Max memory bandwidth 68 Gb/s
+l1 Cachs: 32 kB shared between 2 cores
+l2 Cache: 256 kB shared between 2 cores
+L3 Cache: 20 MB shared between all cores

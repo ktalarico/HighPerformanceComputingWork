@@ -1,0 +1,20 @@
+gcc -o lin linpack.c
+./lin
+./lin
+./lin
+./lin
+gcc -O1 -o lin linpack.c
+./lin
+./lin
+./lin
+./lin
+gcc -O2 -o lin linpack.c
+./lin
+./lin
+./lin
+./lin
+gcc -O3 -o lin linpack.c
+./lin
+./lin
+./lin
+./lin

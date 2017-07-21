@@ -1,0 +1,8 @@
+CC=g++
+CFLAGS=-march=native -mtune=native -fopenmp -std=c++11
+
+memread: memRead.cpp
+	$(CC) $(CFLAGS) -o memread memRead.cpp
+
+memread.S: memRead.cpp
+	$(CC) $(CFLAGS) -O3 -S -g -fverbose-asm -o memread.S memRead.cpp

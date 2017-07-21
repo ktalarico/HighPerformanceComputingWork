@@ -1,0 +1,6 @@
+For Flops the Xeon E5-2667 v3 processor can do 800 GFlops
+For Iops: 600 GIops
+
+My code achieved 800 GFlops using 8 cores and 400 GIops
+
+The Flops code showed steady improvement through using openMP and vector instructions. I had a problem getting final total of 800 GFlops and found out that there were not enough instructions within the loop to keep all the Ports busy. After adding a couple more FMA instructions I got the final throughput. The Iops program proved to be more troublesome with the compiler adding move operations inbetween vector operation in the for loop, Dr.Saule and I were unable to resolve this issue.

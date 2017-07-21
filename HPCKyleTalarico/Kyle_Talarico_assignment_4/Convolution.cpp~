@@ -1,0 +1,41 @@
+#include<iostream>
+#include<cstdlib>
+#include<time.h>
+#include<chrono>
+#include<math.h>
+#include<omp.h>
+int main(int argc, char* argv[]){
+  using namespace std::chrono;
+  steady_clock::time_point start, end;
+  srand(time(NULL));
+  float n = atof(argv[1]), m = atof(argv[2]), k = atof(argv[3]);
+  float *a, *b, *kernel;
+  float ko2 = floor(k/2);
+  int is = floor((k/3)+1), im = (n+floor((k/3)+1)), js = floor((k/3)+1), jm = (m+floor((k/3)+1));
+  posix_memalign((void **)&a, sizeof(float), (m+(k-1))*(n+(k-1))*sizeof(float));
+  posix_memalign((void **)&b, sizeof(float), m*n*sizeof(float));
+  posix_memalign((void **)&kernel, sizeof(float), k*k*sizeof(float));
+  for(int i=0; i<k;i++){
+    for(int j=0; j<k;j++){
+      kernel[(int)(i*k+j)] = rand()%2;
+    }
+  }
+  start = steady_clock::now();
+#pragma omp parallel for
+  for(int i=is; i<im; i++){
+    for(int j=js; j<jm; j++){
+      for(int q=0; q<k; q++){
+	for(int p=0; p<k; p++){
+	  b[(int)(i*n+j)] += kernel[(int)(q*k+p)] * a[(int)((i-(ko2+q))*n+(j-(ko2+p)))];
+	}
+      }
+    }
+  }
+  end = steady_clock::now();
+  free(a);
+  free(b);
+  free(kernel);
+
+  duration<double> elapsed_time = duration_cast<duration<double>>(end-start);
+  std::cout<<"Took:\t"<<elapsed_time.count()<<"\n";
+}

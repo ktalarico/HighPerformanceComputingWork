@@ -1,0 +1,5 @@
+#!/bin/sh
+#PBS -q mamba
+#PBS -l nodes=1:ppn=7:gpus=1
+#PBS -l walltime=1:00:00
+./poly 1024 5 128

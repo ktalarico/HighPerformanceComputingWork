@@ -1,0 +1,5 @@
+CC=nvcc
+CFLAGS=-arch=compute_50 -code=sm_50 -std=c++11
+
+test: bilinGPU.cu makefile
+	$(CC) $(CFLAGS) -o test bilinGPU.cu

@@ -1,0 +1,3 @@
+ModuleCmd_Load.c(213):ERROR:105: Unable to locate a modulefile for 'cuda'
+1	0.0607568
+/var/spool/torque/mom_priv/jobs/13781.mba-m1.uncc.edu.SC: line 7: 189860 Segmentation fault      (core dumped) ./testAVX 1024 1024 10 1

@@ -1,0 +1,30 @@
+no error
+no error
+512	1	1.43209e+07
+no error
+no error
+4096	1	1.12642e+08
+no error
+no error
+16384	1	4.4637e+08
+no error
+no error
+65536	1	1.6153e+09
+no error
+no error
+131072	1	2.83442e+09
+no error
+no error
+262144	1	4.63439e+09
+no error
+no error
+524288	1	6.17187e+09
+no error
+no error
+1048576	1	8.13423e+09
+no error
+no error
+4194304	1	1.09595e+10
+invalid configuration argument
+invalid argument
+-2147483648	1	-1.84762e+14

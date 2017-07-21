@@ -1,0 +1,49 @@
+
+n: 2048
+m: 2048
+k: 3
+Pixels/s:	2.40315e+08
+Computaion Max:	1.88889e+11
+Memory Max:	5e+10
+
+n: 2048
+m: 2048
+k: 5
+Pixels/s:	1.02838e+08
+Computaion Max:	6.8e+10
+Memory Max:	5e+10
+
+n: 2048
+m: 2048
+k: 7
+Pixels/s:	5.37925e+07
+Computaion Max:	3.46939e+10
+Memory Max:	5e+10
+
+n: 2048
+m: 2048
+k: 9
+Pixels/s:	3.30061e+07
+Computaion Max:	2.09877e+10
+Memory Max:	5e+10
+
+n: 2048
+m: 2048
+k: 11
+Pixels/s:	2.21962e+07
+Computaion Max:	1.40496e+10
+Memory Max:	5e+10
+
+n: 2048
+m: 2048
+k: 13
+Pixels/s:	1.5901e+07
+Computaion Max:	1.00592e+10
+Memory Max:	5e+10
+
+n: 2048
+m: 2048
+k: 15
+Pixels/s:	1.19779e+07
+Computaion Max:	7.55556e+09
+Memory Max:	5e+10

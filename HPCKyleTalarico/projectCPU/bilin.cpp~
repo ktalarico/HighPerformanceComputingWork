@@ -1,0 +1,49 @@
+#include<iostream>
+#include<omp.h>
+#include<chrono>
+#include<stdio.h>
+
+#define STB_IMAGE_IMPLEMENTATION
+#define STD_IMAGE_WRITE_IMPLEMENTATION
+#include "stb_image.h"
+#include "stb_image_write.h"
+
+struct Image {
+  uint8_t *r, *g, *b;
+  double *heatmap;
+  int x, y, n;
+  int id;
+};
+
+int main(int argc, char* argv[]){
+  Image lancia = { 0 }, lancia_t = { 0 };
+  uint8_t *rgb = stbi_load("home/kyle/School/HPCKyleTalarico/projectCPU/images/lancia.png", &lancia.x, &lancia.y, &lancia.n, 3);
+  std::cout<<stbi_failure_reason()<<"\t"<<errno<<"\n";
+  lancia.r = (uint8_t *)malloc(lancia.x*lancia.y*sizeof(uint8_t));
+  lancia.g = (uint8_t *)malloc(lancia.x*lancia.y*sizeof(uint8_t));
+  lancia.b = (uint8_t *)malloc(lancia.x*lancia.y*sizeof(uint8_t));
+  for(int i=0; i<lancia.x; i++){
+    for(int j=0; j<lancia.y; j++){
+    
+      lancia.r[i*lancia.x+j] = rgb[i*lancia.x+j*lancia.n];
+      lancia.g[i*lancia.x+j] = rgb[i*lancia.x+j*lancia.n + 1];
+      lancia.b[i*lancia.x+j] = rgb[i*lancia.x+j*lancia.n + 2];
+    
+    }
+  }
+
+  rgb = stbi_load("./images/lancia_t.png", &lancia_t.x, &lancia_t.y, &lancia_t.n, 3);
+  
+  lancia_t.r = (uint8_t *)malloc(lancia_t.x*lancia_t.y*sizeof(uint8_t));
+  lancia_t.g = (uint8_t *)malloc(lancia_t.x*lancia_t.y*sizeof(uint8_t));
+  lancia_t.b = (uint8_t *)malloc(lancia_t.x*lancia_t.y*sizeof(uint8_t));
+  for(int i=0; i<lancia_t.x; i++){
+    for(int j=0; j<lancia_t.y; j++){
+      lancia_t.r[i*lancia.x+j] = rgb[i*lancia_t.x+j*lancia_t.n];
+      lancia_t.g[i*lancia.x+j] = rgb[i*lancia_t.x+j*lancia_t.n + 1];
+      lancia_t.b[i*lancia.x+j] = rgb[i*lancia_t.x+j*lancia_t.n + 2];
+    }
+  }
+  
+  
+}
